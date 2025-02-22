@@ -1,0 +1,134 @@
+.about {
+    background-color: white;
+    color: white;
+    width: 90%;  /* Set a fixed width */
+    height: 300px;  /* Set a fixed height */
+    padding: 50px; /* Adjust padding */
+    margin: 20px auto; /* Center the box */
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Ensures text doesn't expand the box */
+}
+
+.about h1{
+    font-family: "Lucida Handwriting", cursive;
+    margin-left: 700px;
+    margin-top: auto;
+}
+
+.vegetarian {
+    background-color: #AAD15F;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 50px; /* Increase padding for equal space */
+    padding-bottom: 50px; /* Match top padding */
+    min-height: 600px; /* Ensure enough space for equal margins */
+}
+
+.vegetarian h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; /* Ensures full width for proper centering */
+    margin-bottom: 20px; /* Space between heading and cards */
+}
+
+.vegetarian button {
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: auto;
+    color: white;
+    border: 3px solid white; /* White border */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.vegetarian button:hover {
+    background-color: #FDE4CE; /* Light cream background */
+    color: #AAD15F; /* Green text */
+    border-color: #FDE4CE; /* Matching border */
+}
+
+.nonveg {
+    background-color: #FF670E;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 50px; /* Increase padding for equal space */
+    padding-bottom: 50px; /* Match top padding */
+    min-height: 600px; /* Ensure enough space for equal margins */
+}
+
+.nonveg h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; /* Ensures full width for proper centering */
+    margin-bottom: 20px; /* Space between heading and cards */
+}
+  
+.nonveg button {
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: auto;
+    color: white;
+    border: 3px solid white; /* White border */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.nonveg button:hover {
+    background-color: #FDE4CE; /* Light cream background */
+    color: #FF670E; /* Orange Text */
+    border-color: #FDE4CE; /* Matching border */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 20px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.card {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    cursor: pointer;
+}

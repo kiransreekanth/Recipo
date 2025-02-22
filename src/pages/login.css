@@ -1,0 +1,48 @@
+/* Center the form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  /* Card Styling */
+  .login-card {
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    width: 400px; /* Adjust width */
+  }
+  
+  /* Input Styling */
+  .form-control {
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%; /* Make it responsive */
+  }
+  
+  /* Checkbox and Forgot Password Alignment */
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Ensure Checkbox is aligned properly */
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Add spacing between checkbox & text */
+  }
+  
+  /* Spacing for social icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  

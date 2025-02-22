@@ -1,0 +1,98 @@
+.navbar-toggler {
+    border: 2px solid white !important; /* White border */
+    background-color: transparent !important; /* Transparent background */
+}
+
+/* Change the icon color */
+.navbar-toggler-icon {
+    filter: invert(1); /* Inverts black to white */
+}
+
+/* Optional: Hover effect */
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Light white hover effect */
+}
+
+
+.navbar {
+    background-color: #4E070C !important;
+    padding: 20px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Default link styling (Idle State) */
+.nav-link {
+    padding: 10px 15px; /* Spacing */
+    color: white !important; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    color: #FDE4CE !important; /* Light cream */
+}
+
+/* Active (Clicked) and Focused States */
+.nav-link:active,
+.nav-link:focus {
+    color: #FDE4CE !important; /* Same as hover */
+    background-color: transparent !important; /* Prevents Bootstrap's default bg */
+    outline: none !important; /* Removes default focus outline */
+    box-shadow: none !important;
+}
+
+
+.nav-item {
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 12px;
+    width: 200px;
+}
+
+/* Default button styling (Idle State) */
+.btn-outline-success {
+    color: white; /* White text */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-outline-success:hover {
+    background-color: #FDE4CE; /* Light cream background */
+    color: #4E070C; /* Dark red text */
+    border-color: #FDE4CE; /* Matching border */
+}
+
+/* Clicked (Active) and Focused States */
+.btn-outline-success:active,
+.btn-outline-success:focus {
+    background-color: #FDE4CE !important; /* Keeps the hover color */
+    color: #4E070C !important;
+    border-color: #FDE4CE !important;
+    box-shadow: none !important; /* Removes Bootstrap's default focus glow */
+}
+
+
+
+

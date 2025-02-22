@@ -1,3 +1,9 @@
+### FrontEnd Integration
+
+1)Home page with text field to search recipes, seperate sections to add vegetarian and non-vegetarian recipes.
+2)Login/Register button to redirect to login page. If the user is not registered click the register here button which will redirect to new user registration page.
+3)When add recipe button is clicked, the page will redirect to a section to fill the recipe details.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

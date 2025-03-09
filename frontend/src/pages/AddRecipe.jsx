@@ -18,9 +18,24 @@ const AddRecipe = () => {
 
   // Check authentication on component mount
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (!token) {
+    const userString = localStorage.getItem('user');
+    
+    if (!userString) {
       setMessage('You must be logged in to add a recipe.');
+      navigate('/login');
+      return;
+    }
+
+    try {
+      const userData = JSON.parse(userString);
+      if (!userData.token) {
+        setMessage('Your session is invalid. Please log in again.');
+        navigate('/login');
+      }
+    } catch (err) {
+      console.error('Error parsing user data:', err);
+      localStorage.removeItem('user'); // Remove corrupted data
+      setMessage('Authentication error. Please log in again.');
       navigate('/login');
     }
   }, [navigate]);
@@ -34,9 +49,9 @@ const AddRecipe = () => {
     setLoading(true);
     setMessage('');
     
-    const token = localStorage.getItem('token');
-
-    if (!token) {
+    const userString = localStorage.getItem('user');
+    
+    if (!userString) {
       setMessage('You must be logged in to add a recipe.');
       setLoading(false);
       navigate('/login');
@@ -44,11 +59,20 @@ const AddRecipe = () => {
     }
 
     try {
+      const userData = JSON.parse(userString);
+      
+      if (!userData.token) {
+        setMessage('Your session is invalid. Please log in again.');
+        setLoading(false);
+        navigate('/login');
+        return;
+      }
+
       const response = await axios.post(
         'http://localhost:5000/add-recipe',
         recipe,
         {
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${userData.token}` }
         }
       );
       
@@ -63,7 +87,7 @@ const AddRecipe = () => {
       
       if (error.response?.status === 401) {
         // Token is invalid or expired
-        localStorage.removeItem('token'); // Clear the invalid token
+        localStorage.removeItem('user'); // Clear the invalid user data
         setMessage('Your session has expired. Please log in again.');
         setTimeout(() => navigate('/login'), 1500);
       } else {

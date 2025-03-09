@@ -1,0 +1,131 @@
+/* Center the form vertically and horizontally */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #eee;
+  padding: 20px;
+}
+
+.register-card {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Adjust form and image widths */
+.register-form {
+  width: 45%;
+}
+
+.register-image {
+  width: 50%;
+}
+
+.register-image img {
+  width: 100%;
+  height: auto;
+}
+
+.form-outline {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-outline input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-outline label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .register-card {
+    width: 80%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .register-form {
+    width: 100%;
+  }
+
+  .register-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 15px;
+  }
+
+  .form-outline input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .register-btn {
+    font-size: 16px;
+  }
+}

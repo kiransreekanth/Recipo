@@ -1,0 +1,130 @@
+/* Navbar styling */
+.navbar {
+    background-color: #4E070C !important;
+    padding: 15px 20px; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar brand (logo/text) */
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Navbar links (Home, Support, etc.) */
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Individual nav items */
+.nav-item {
+    text-align: center;
+}
+
+/* Default link styling */
+.nav-link {
+    padding: 8px 12px; /* Adjusted for better alignment */
+    color: white !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #FDE4CE !important; /* Light cream */
+}
+
+/* Active and focus states */
+.nav-link:active,
+.nav-link:focus {
+    color: #FDE4CE !important;
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* User greeting styling */
+.user-greeting {
+    color: #FDE4CE !important; /* Light cream color to make it stand out */
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background highlight */
+}
+
+/* User greeting hover effect */
+.user-greeting:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Logout button */
+.logout-btn {
+    background-color: #D9534F; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 5px 12px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    height: 38px; /* Set height to match navbar links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px; /* Align with nav items */
+}
+
+/* Logout button hover effect */
+.logout-btn:hover {
+    background-color: #C9302C;
+    color: white;
+}
+
+/* Search bar */
+.form-control {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 12px;
+    width: 200px;
+}
+
+/* Search button */
+.btn-outline-success {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Search button hover effect */
+.btn-outline-success:hover {
+    background-color: #FDE4CE;
+    color: #4E070C;
+    border-color: #FDE4CE;
+}
+
+/* Navbar toggler (for smaller screens) */
+.navbar-toggler {
+    border: 2px solid white !important;
+    background-color: transparent !important;
+}
+
+/* Change the toggler icon color */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Hover effect for toggler */
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}

@@ -1,0 +1,465 @@
+/* General Styles */
+.about {
+    background-color: white;
+    color: white;
+    width: 90%;
+    height: 300px;
+    padding: 50px;
+    margin: 20px auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about h1 {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Vegetarian & Non-Vegetarian Sections */
+.vegetarian,
+.nonveg {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 0;
+    min-height: 600px;
+}
+
+.vegetarian {
+    background-color: #AAD15F;
+}
+
+.nonveg {
+    background-color: #FF670E;
+}
+
+.vegetarian h1,
+.nonveg h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.vegetarian button,
+.nonveg button {
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.vegetarian button:hover {
+    background-color: #FDE4CE;
+    color: #AAD15F;
+    border-color: #FDE4CE;
+}
+
+.nonveg button:hover {
+    background-color: #FDE4CE;
+    color: #FF670E;
+    border-color: #FDE4CE;
+}
+
+/* Centering Cards */
+.vegetarian .card-container,
+.nonveg .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+/* Enhanced Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 12px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-details h3 {
+    font-size: 0.9rem;
+    margin: 8px 0 4px 0;
+    color: #555;
+}
+
+.card-details p {
+    font-size: 0.8rem;
+    margin: 0 0 8px 0;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Card Action Buttons Styling */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin-left: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Save Button Styling */
+.save-btn {
+    background-color: #4D79FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.save-btn:hover {
+    background-color: #3366FF;
+}
+
+.save-btn.saved {
+    background-color: #50C878;
+}
+
+.save-btn.saved:hover {
+    background-color: #3CB371;
+}
+
+.no-recipes {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Suggested Recipe Section */
+.suggestedrecipe {
+    background-color: #FDE4CE;
+    width: 90%;
+    height: auto;
+    padding: 50px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggestedrecipe h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suggestedrecipe .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Adding to existing home.css */
+
+/* Search Results Section */
+.search-results {
+    width: 100%;
+    background-color: #f8f9fa;
+    margin-top: 40px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-results h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search-results .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+/* Highlight styling for search results */
+.card.highlighted {
+    border: 2px solid #4D79FF;
+    box-shadow: 0 0 10px rgba(77, 121, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    font-weight: bold;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Responsive styles for search results */
+@media screen and (max-width: 768px) {
+    .search-results {
+        padding: 30px 0;
+    }
+    
+    .search-results h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-results {
+        padding: 20px 0;
+    }
+    
+    .search-results h1 {
+        font-size: 1.3rem;
+    }
+}
+
+/* =========== MEDIA QUERIES FOR RESPONSIVENESS =========== */
+
+/* For screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+    .about {
+        height: 250px;
+        padding: 30px;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .vegetarian, 
+    .nonveg {
+        padding: 30px 0;
+    }
+
+    .vegetarian h1, 
+    .nonveg h1 {
+        font-size: 1.8rem;
+    }
+
+    .vegetarian button, 
+    .nonveg button {
+        width: 220px;
+        padding: 12px;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+  
+    .card-title {
+        font-size: 1.1rem;
+    }
+  
+    .card-image {
+        height: 130px;
+    }
+
+    .suggestedrecipe {
+        padding: 40px;
+    }
+
+    .suggestedrecipe h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .about {
+        height: 200px;
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .vegetarian h1, 
+    .nonveg h1, 
+    .suggestedrecipe h1 {
+        font-size: 1.5rem;
+    }
+
+    .vegetarian button, 
+    .nonveg button {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+  
+    .card-image {
+        height: 130px;
+    }
+    
+    .delete-btn, .save-btn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .about {
+        height: 180px;
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 1.2rem;
+    }
+
+    .vegetarian h1, 
+    .nonveg h1, 
+    .suggestedrecipe h1 {
+        font-size: 1.3rem;
+    }
+
+    .vegetarian button, 
+    .nonveg button {
+        width: 180px;
+        padding: 8px;
+    }
+
+    .card {
+        max-width: 250px;
+        padding: 20px;
+    }
+  
+    .card-image {
+        height: 120px;
+    }
+  
+    .card-title {
+        font-size: 1rem;
+    }
+  
+    .card-details h3 {
+        font-size: 0.8rem;
+    }
+  
+    .card-details p {
+        font-size: 0.75rem;
+    }
+    
+    .delete-btn, .save-btn {
+        padding: 3px 6px;
+        font-size: 0.7rem;
+    }
+
+    .suggestedrecipe {
+        padding: 30px;
+    }
+}

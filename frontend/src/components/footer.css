@@ -1,0 +1,38 @@
+.footer {
+    background-color: #4E070C; /* Same as Navbar */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white; /* Same as Navbar */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #FDE4CE; /* Highlight color */
+}
+
+.footer-line {
+    width: 80%;
+    margin: 10px auto;
+    border: 0.5px solid white;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: white;
+}

@@ -1,0 +1,337 @@
+/* General container styles */
+.saved-recipes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Match the about section from Home */
+.saved-recipes-container .about {
+    background-color: white;
+    color: white;
+    width: 90%;
+    height: 300px;
+    padding: 50px;
+    margin: 20px auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-image: url('/public/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.saved-recipes-container .about h1 {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Main saved recipes section - styled similar to vegetarian/nonveg sections */
+.saved-section {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 0;
+    min-height: 600px;
+    background-color: #4D79FF; /* Blue color for saved recipes section */
+}
+
+.saved-section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Card container styles - match home.css */
+.saved-section .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+/* Card styles - match home.css */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 12px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-details h3 {
+    font-size: 0.9rem;
+    margin: 8px 0 4px 0;
+    color: #555;
+}
+
+.card-details p {
+    font-size: 0.8rem;
+    margin: 0 0 8px 0;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Card action button styling */
+.card-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Loading state */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Error state */
+.error-container {
+    background-color: #ffebee;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+}
+
+.error-container h3 {
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+.login-btn {
+    display: inline-block;
+    background-color: #4D79FF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #3366FF;
+}
+
+/* Empty state styles */
+.empty-state {
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.empty-state h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.empty-state p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: white;
+    color: #4D79FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* =========== MEDIA QUERIES FOR RESPONSIVENESS =========== */
+
+/* For screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+    .saved-recipes-container .about {
+        height: 250px;
+        padding: 30px;
+    }
+
+    .saved-recipes-container .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .saved-section {
+        padding: 30px 0;
+    }
+
+    .saved-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+  
+    .card-title {
+        font-size: 1.1rem;
+    }
+  
+    .card-image {
+        height: 130px;
+    }
+}
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .saved-recipes-container .about {
+        height: 200px;
+        padding: 20px;
+    }
+
+    .saved-recipes-container .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .saved-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+  
+    .card-image {
+        height: 130px;
+    }
+    
+    .delete-btn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .saved-recipes-container .about {
+        height: 180px;
+        padding: 15px;
+    }
+
+    .saved-recipes-container .about h1 {
+        font-size: 1.2rem;
+    }
+
+    .saved-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+  
+    .card-image {
+        height: 120px;
+    }
+  
+    .card-title {
+        font-size: 1rem;
+    }
+  
+    .card-details h3 {
+        font-size: 0.8rem;
+    }
+  
+    .card-details p {
+        font-size: 0.75rem;
+    }
+    
+    .delete-btn {
+        padding: 3px 6px;
+        font-size: 0.7rem;
+    }
+}

@@ -19,3 +19,6 @@ How to run the code:
  Start the backend using 'nodemon server.js'.
 
  ![Screenshot (132)](https://github.com/user-attachments/assets/7a1d1529-edba-4812-8bc7-e10b3bc5bae6)
+
+ ![Screenshot (133)](https://github.com/user-attachments/assets/6b7ed020-80e5-45e9-942e-9b559eeeea22)
+

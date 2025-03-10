@@ -88,5 +88,18 @@ Once both the backend and frontend servers are running:
 - If any issues arise, check logs in the terminal for error messages.
 - Make sure the backend is running before accessing the frontend.
 
+![Screenshot (132)](https://github.com/user-attachments/assets/05c53122-da02-4363-b1ce-58f27eab1335)
+
+
+![Screenshot (133)](https://github.com/user-attachments/assets/5def9d56-342c-4716-98ad-b762c65b093e)
+
+
+![Screenshot (134)](https://github.com/user-attachments/assets/e331a5b6-8c00-49a4-8bf1-6ed6e633c836)
+
+
+![Screenshot (136)](https://github.com/user-attachments/assets/894833d8-fdb4-4826-a01b-35c54ccfdaa3)
+
+
+
 
 

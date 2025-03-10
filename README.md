@@ -88,6 +88,19 @@ Once both the backend and frontend servers are running:
 - If any issues arise, check logs in the terminal for error messages.
 - Make sure the backend is running before accessing the frontend.
 
+# Future Scope of Recipo  
+
+## AI-Based Recipe Suggestion  
+- Implement an **AI-powered recommendation system** that suggests recipes based on user preferences, dietary restrictions, and past cooking history.  
+- Utilize **machine learning algorithms** to analyze ingredient availability and recommend dishes accordingly.  
+
+## Calorie Tracker for Each Recipe  
+- Integrate an **automated nutritional analysis** feature to calculate and display calorie counts and macronutrient breakdowns for each recipe.  
+- Provide **personalized health insights** based on user dietary goals, such as weight loss, muscle gain, or balanced eating.  
+
+These enhancements will make **Recipo** smarter and more user-friendly, catering to both food enthusiasts and health-conscious users. 🚀  
+
+
 ![Screenshot (132)](https://github.com/user-attachments/assets/05c53122-da02-4363-b1ce-58f27eab1335)
 
 

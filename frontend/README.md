@@ -1,9 +1,3 @@
-### FrontEnd Integration
-
--Home page with text field to search recipes, seperate sections to add vegetarian and non-vegetarian recipes.\
--Login/Register button to redirect to login page. If the user is not registered click the register here button which will redirect to new user registration page.\
--When add recipe button is clicked, the page will redirect to a section to fill the recipe details.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
